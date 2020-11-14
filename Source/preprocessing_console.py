@@ -152,7 +152,7 @@ def main():
     parser.add_argument('--input', help = 'path to input file', required = True)
     parser.add_argument('--output', help = 'path to output file')
     parser.add_argument('--task', help = 'preprocessing task', required = True)
-    parser.add_argument('--columns', help = 'thuộc tính list', nargs = '*')
+    parser.add_argument('--columns', help = 'thuộc tính list', nargs = '*') # Tên thuộc tính không được có khoảng trắng
     parser.add_argument('--newMinMax', help = 'new min and max for min-max normalization', nargs = 2)
     parser.add_argument('--ratio', help = 'ngưỡng tỉ lệ thiếu theo %')
     args = parser.parse_args()
